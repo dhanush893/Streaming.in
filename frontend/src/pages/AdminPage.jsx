@@ -45,7 +45,7 @@ export default function AdminPage(){
      <label className="check-label"><input type="checkbox" checked={Boolean(form.authorizedMedia)} onChange={e=>setField('authorizedMedia',e.target.checked)}/> I confirm this media source is authorized for streaming</label>
      <label className="check-label"><input type="checkbox" checked={Boolean(form.isFeatured)} onChange={e=>setField('isFeatured',e.target.checked)}/> Feature this title on the homepage</label>
      <label>Status<select value={form.status} onChange={e=>setField('status',e.target.value)}><option value="published">Published</option><option value="draft">Draft</option></select></label>
-     <div className="form-actions"><button className="button button-primary" disabled={busy}>{busy?<LoaderCircle className="spin" size={16}/>:<Plus size={16}/ >}{editing?'Save changes':'Add title'}</button>{editing&&<button type="button" className="button button-quiet" onClick={()=>{setEditing(null);setForm(blank);}}>Cancel edit</button>}</div>
+     <div className="form-actions"><button className="button button-primary" disabled={busy}>{busy?<LoaderCircle className="spin" size={16}/>:<Plus size={16}/>}{editing?'Save changes':'Add title'}</button>{editing&&<button type="button" className="button button-quiet" onClick={()=>{setEditing(null);setForm(blank);}}>Cancel edit</button>}</div>
     </form>
    </section>
    <section className="admin-panel admin-library"><div className="panel-heading"><div><span className="eyebrow">YOUR CATALOGUE</span><h2>Library <small>{movies.length}</small></h2></div></div>
