@@ -1,0 +1,24 @@
+const art={
+  horizon:'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85',
+  city:'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=85',
+  ocean:'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=85',
+  night:'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80',
+  desert:'https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80',
+  forest:'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80',
+  sea:'https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80',
+  sky:'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80',
+  bloom:'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80',
+  building:'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=800&q=80'
+};
+export const demoMovies=[
+{_id:'demo-01',slug:'the-last-horizon',title:'The Last Horizon',year:2026,genres:['Adventure','Drama'],languages:['English'],runtime:128,maturityRating:'U/A 13+',description:'Beyond the edge of the known world, one journey changes everything. An atmospheric adventure about courage, connection and the places that shape us.',posterUrl:art.horizon,backdropUrl:art.horizon,isFeatured:true,contentType:'movie',authorizedMedia:false},
+{_id:'demo-02',slug:'city-of-silence',title:'City of Silence',year:2025,genres:['Thriller','Mystery'],languages:['English','Hindi'],runtime:116,maturityRating:'U/A 16+',description:'A quiet city holds a story no one wants to tell. A detective follows the smallest clues into a mystery that reaches far beyond its streets.',posterUrl:art.city,backdropUrl:art.city,contentType:'movie',authorizedMedia:false},
+{_id:'demo-03',slug:'blue-current',title:'Blue Current',year:2025,genres:['Documentary','Nature'],languages:['English'],runtime:92,maturityRating:'U',description:'A visual journey across the extraordinary life of our oceans and the communities working to protect them.',posterUrl:art.ocean,backdropUrl:art.ocean,contentType:'movie',authorizedMedia:false},
+{_id:'demo-04',slug:'desert-echoes',title:'Desert Echoes',year:2024,genres:['Drama','Adventure'],languages:['Hindi'],runtime:109,maturityRating:'U/A 13+',description:'Two strangers cross a vast landscape and discover that the stories they carry are closer than they imagined.',posterUrl:art.desert,backdropUrl:art.desert,contentType:'movie',authorizedMedia:false},
+{_id:'demo-05',slug:'the-green-mile',title:'The Green Mile',year:2026,genres:['Nature','Documentary'],languages:['English','Kannada'],runtime:84,maturityRating:'U',description:'An intimate look at forests, wildlife and the quiet resilience of the natural world.',posterUrl:art.forest,backdropUrl:art.forest,contentType:'movie',authorizedMedia:false},
+{_id:'demo-06',slug:'open-reel-flower-study',title:'Open Reel: Flower Study',year:2024,genres:['Short Film','Nature'],languages:['English'],runtime:1,maturityRating:'U',description:'A short sample clip for testing the streaming player. This public-domain demonstration video is served by MDN and is not a feature film.',posterUrl:art.bloom,backdropUrl:art.bloom,contentType:'movie',authorizedMedia:true,streamUrl:'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4'},
+{_id:'demo-07',slug:'above-the-clouds',title:'Above the Clouds',year:2025,genres:['Adventure','Documentary'],languages:['English'],runtime:98,maturityRating:'U',description:'A breathtaking journey to the high places where land, sky and human ambition meet.',posterUrl:art.sky,backdropUrl:art.sky,contentType:'movie',authorizedMedia:false},
+{_id:'demo-08',slug:'after-the-tide',title:'After the Tide',year:2026,genres:['Drama','Family'],languages:['Kannada','English'],runtime:104,maturityRating:'U/A 13+',description:'A family returns to the coast and finds a new beginning in the rhythm of the sea.',posterUrl:art.sea,backdropUrl:art.sea,contentType:'movie',authorizedMedia:false},
+{_id:'demo-09',slug:'the-glass-house',title:'The Glass House',year:2024,genres:['Mystery','Drama'],languages:['English'],runtime:111,maturityRating:'U/A 13+',description:'A striking home, a missing memory and a mystery told through the details everyone else overlooks.',posterUrl:art.building,backdropUrl:art.building,contentType:'series',authorizedMedia:false},
+{_id:'demo-10',slug:'midnight-lines',title:'Midnight Lines',year:2025,genres:['Thriller','Drama'],languages:['Hindi','English'],runtime:103,maturityRating:'U/A 16+',description:'When the last train leaves, a stranger boards with a secret that changes the night for everyone.',posterUrl:art.night,backdropUrl:art.night,contentType:'series',authorizedMedia:false}
+];
