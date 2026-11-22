@@ -15,7 +15,8 @@ router.get('/', async (req, res, next) => {
     }
     const sortMap = { newest: { year: -1, createdAt: -1 }, oldest: { year: 1 }, title: { title: 1 }, rating: { createdAt: -1 } };
     const limit = Math.min(Math.max(Number(req.query.limit) || 60, 1), 100);
-    const movies = await Movie.find(filter).select('-streamUrl').sort(sortMap[req.query.sort] || { isFeatured: -1, createdAt: -1 }).limit(limit).lean();
+    const movies = await Movie.find(filter).select('+streamUrl').sort(sortMap[req.query.sort] || { isFeatured: -1, createdAt: -1 }).limit(limit).lean();
+    for (const movie of movies) if (!movie.authorizedMedia) delete movie.streamUrl;
     res.json({ movies });
   } catch (error) { next(error); }
 });
